@@ -1,21 +1,26 @@
-document.querySelector('#dlinaStoroniKvadrata').onclick = function () {
-    alert('Укажите длинну сторони');
+function showResultInDomKvadrat () {
+    const x = document.getElementById('dlinaStoroniKvadrata').value;
+    const result = formulaKvadrat(x);
+    document.getElementById('ploschadKvadrata').innerHTML = result;
 }
 
-document.querySelector('#pervayaStoronaPriamougolnika').onclick = function () {
-    alert('Укажите длинну первой сторони');
+function showResultInDomPriamougolnika () {
+    const x = document.getElementById('pervayaStoronaPriamougolnika').value;
+    const y = document.getElementById('drugayaStoronaPriamougolnika').value;
+    const result = formulaPramougolnik(x,y);
+    document.getElementById('ploschadPriamougolnika').innerHTML = result;
 }
 
-document.querySelector('#drugayaStoronaPriamougolnika').onclick = function () {
-    alert('Укажите длинну второй сторони');
+function showResultInDomParalelograma () {
+    const x = document.getElementById('dlinaStoronyParalelograma').value;
+    const h = document.getElementById('dlinaVisotyParalelograma').value;
+    const result = formulaParalelogram(x,h);
+    document.getElementById('ploschadParalelograma').innerHTML = result;
 }
 
-document.querySelector('#ploschadParalelograma').onclick = function () {
-    alert('Это результат');
+function showResultInDomRomba () {
+    const x = document.getElementById('dlinaStoronyRomba').value;
+    const h = document.getElementById('dlinaStoronyRomba').value;
+    const result = formulaRomb(x,h);
+    document.getElementById('ploschadRomba').innerHTML = result;
 }
-
-document.querySelector('#ploschadRomba').onclick = function () {
-    alert('Пересчитай в уме)');
-}
-
-

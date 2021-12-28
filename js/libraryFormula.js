@@ -1,26 +1,39 @@
-function showResultInDomKvadrat () {
-    a = document.getElementById('dlinaStoroniKvadrata').value;
-    S = a*a;
-    document.getElementById('ploschadKvadrata').innerHTML = `Площадь квадрата равна ${S}`;
+function formulaKvadrat(x) {
+    return x*x;
 }
 
-function showResultInDomPriamougolnika () {
-    a = document.getElementById('pervayaStoronaPriamougolnika').value;
-    b = document.getElementById('drugayaStoronaPriamougolnika').value;
-    S = a*b;
-    document.getElementById('ploschadPriamougolnika').innerHTML = `Площадь прямоугольника равна ${S}`;
+function formulaPramougolnik(x,y) {
+    return x*y;
 }
 
-function showResultInDomParalelograma () {
-    a = document.getElementById('dlinaStoronyParalelograma').value;
-    b = document.getElementById('dlinaVisotyParalelograma').value;
-    S = a*b;
-    document.getElementById('ploschadParalelograma').innerHTML = `Площадь паралелограма равна ${S}`;
+function formulaParalelogram(x,h) {
+    return x*h;
 }
 
-function showResultInDomRomba () {
-    a = document.getElementById('dlinaStoronyRomba').value;
-    h = document.getElementById('dlinaVisotyRomba').value;
-    S = a*h;
-    document.getElementById('ploschadRomba').innerHTML = `Площадь ромба равна ${S}`;
+function formulaRomb(x,h) {
+    return x*h;
 }
+
+
+//не правильный вариант
+
+// function showResultInDomPriamougolnika () {
+//     let a = document.getElementById('pervayaStoronaPriamougolnika').value;
+//     let b = document.getElementById('drugayaStoronaPriamougolnika').value;
+//     S = a*b;
+//     document.getElementById('ploschadPriamougolnika').innerHTML = `Площадь прямоугольника равна ${S}`;
+// }
+
+// function showResultInDomParalelograma () {
+//     let a = document.getElementById('dlinaStoronyParalelograma').value;
+//     let b = document.getElementById('dlinaVisotyParalelograma').value;
+//     S = a*b;
+//     document.getElementById('ploschadParalelograma').innerHTML = `Площадь паралелограма равна ${S}`;
+// }
+
+// function showResultInDomRomba () {
+//     let a = document.getElementById('dlinaStoronyRomba').value;
+//     let h = document.getElementById('dlinaVisotyRomba').value;
+//     S = a*h;
+//     document.getElementById('ploschadRomba').innerHTML = `Площадь ромба равна ${S}`;
+// }
