@@ -1,13 +1,7 @@
-// function showResultInDomKvadrat () {
-//     const x = document.getElementById('dlinaStoroniKvadrata').value;
-//     const result = formulaKvadrat(x);
-//     document.getElementById('ploschadKvadrata').innerHTML = result;
-// }
-
-let showResultInDomKvadrat = (result) => { 
-const x = document.getElementById('dlinaStoroniKvadrata').value;
-const result = formulaKvadrat(x);
-document.getElementById('ploschadKvadrata').innerHTML = result;
+function showResultInDomKvadrat () {
+    const x = document.getElementById('dlinaStoroniKvadrata').value;
+    const result = formulaKvadrat(x);
+    document.getElementById('ploschadKvadrata').innerHTML = result;
 }
 
 function showResultInDomPriamougolnika () {
