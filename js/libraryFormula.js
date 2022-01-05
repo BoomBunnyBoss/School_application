@@ -1,18 +1,26 @@
-function formulaKvadrat(x) {
-    return x*x;
-}
+// function formulaKvadrat(x) {
+//     return x*x;
+// }
 
-function formulaPramougolnik(x,y) {
-    return x*y;
-}
+let formulaKvadrat = x => x*x;//строчная функция
 
-function formulaParalelogram(x,h) {
-    return x*h;
-}
+// function formulaPramougolnik(x,y) {
+//     return x*y;
+// }
 
-function formulaRomb(x,h) {
-    return x*h;
-}
+let formulaPramougolnik = (x,h) => x*h;//строчная функция
+
+// function formulaParalelogram(x,h) {
+//     return x*h;
+// }
+
+let formulaParalelogram = (x,h) => x*h;//строчная функция
+
+// function formulaRomb(x,h) {
+//     return x*h;
+// }
+
+let formulaRomb = (a,h) => a*h;//строчная функция
 
 
 //не правильный вариант

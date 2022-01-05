@@ -1,7 +1,13 @@
-function showResultInDomKvadrat () {
-    const x = document.getElementById('dlinaStoroniKvadrata').value;
-    const result = formulaKvadrat(x);
-    document.getElementById('ploschadKvadrata').innerHTML = result;
+// function showResultInDomKvadrat () {
+//     const x = document.getElementById('dlinaStoroniKvadrata').value;
+//     const result = formulaKvadrat(x);
+//     document.getElementById('ploschadKvadrata').innerHTML = result;
+// }
+
+let showResultInDomKvadrat = (result) => { 
+const x = document.getElementById('dlinaStoroniKvadrata').value;
+const result = formulaKvadrat(x);
+document.getElementById('ploschadKvadrata').innerHTML = result;
 }
 
 function showResultInDomPriamougolnika () {
@@ -19,8 +25,8 @@ function showResultInDomParalelograma () {
 }
 
 function showResultInDomRomba () {
-    const x = document.getElementById('dlinaStoronyRomba').value;
+    const a = document.getElementById('dlinaStoronyRomba').value;
     const h = document.getElementById('dlinaStoronyRomba').value;
-    const result = formulaRomb(x,h);
+    const result = formulaRomb(a,h);
     document.getElementById('ploschadRomba').innerHTML = result;
 }
